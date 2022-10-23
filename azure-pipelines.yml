@@ -1,0 +1,28 @@
+#JOB & STAGE name shold not have any spaces
+#default azure runs stages parallely, to make it sequential we should write condition
+
+trigger:
+- main
+
+pool: Default
+
+variables:
+  COMPONENT: payment
+
+resources:
+  repositories:
+  - repository: templates
+    type: github
+    name: devopsravi9/robo-azure-devops-template
+    endpoint: devopsravi9
+
+stages:
+- template: python.yml@templates
+
+
+
+
+
+
+
+
