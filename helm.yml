@@ -1,1 +1,6 @@
 appName: payment
+service:
+  port: 8080
+  type: ClusterIP
+ingress:
+  enables: false
