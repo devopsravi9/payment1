@@ -4,3 +4,13 @@ service:
   type: ClusterIP
 ingress:
   enabled: false
+configMap:
+  enabled: "true"
+  data:
+    CART_HOST: cart
+    CART_PORT: "8080"
+    USER_PORT: "8080"
+    USER_HOST: user
+    AMQP_HOST: rabbitmq-dev.roboshop.internal
+    AMQP_USER: roboshop
+    AMQP_PASS: roboshop123
