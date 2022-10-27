@@ -1,8 +1,8 @@
 #JOB & STAGE name shold not have any spaces
 #default azure runs stages parallely, to make it sequential we should write condition
 
-trigger:
-- main
+#trigger:
+#- main
 
 pool: Default
 
